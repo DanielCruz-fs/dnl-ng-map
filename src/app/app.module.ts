@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GeoMapComponent } from './components/geo-map/geo-map.component';
 
+import { AgmCoreModule } from '@agm/core';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,10 @@ import { GeoMapComponent } from './components/geo-map/geo-map.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDQn22qbggzmPrRihMzDWVwpN-1BffI8Ds'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
