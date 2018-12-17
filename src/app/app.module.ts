@@ -8,19 +8,26 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GeoMapComponent } from './components/geo-map/geo-map.component';
 
 import { AgmCoreModule } from '@agm/core';
+import { EditModalComponent } from './components/geo-map/edit-modal.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
+  entryComponents: [
+    EditModalComponent
+  ],
   declarations: [
     AppComponent,
-    GeoMapComponent
+    GeoMapComponent,
+    EditModalComponent
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
     AgmCoreModule.forRoot({
-      apiKey: 'dAnIeL000092837'
+      apiKey: 'dnl456$%$#$%cvcv'
     })
   ],
   providers: [],
